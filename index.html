@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta class="f-color" charset="UTF-8">
+    <meta class="f-color" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="icon" href="https://open.spotifycdn.com/cdn/images/error-page-logo.24aca703.svg" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <header class="">
+        <nav class="flex align_i">
+            <img src="img/hamburger.svg" class="hamburger pointer" alt="">
+            <div class="logo pointer"><img src="img/logo.svg" alt="Spotify"></div>
+            <div class="hs flex gap">
+                <div class="home"><img src="img/home.svg" alt=""></div>
+                <input type="text" name="username" placeholder="What do you want to play?">
+            </div>
+            <div class="formality flex align_i gap f-color">
+                <div class="psd flex gap">
+                    <span class="pre f-color pointer">Premium</span>
+                    <span class="supp f-color pointer">Support</span>
+                    <span class="down f-color pointer">Download</span>
+                    <span class="gapp">|</span>
+                </div>
+                <span class="install flex align_i just_c pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                        <path
+                            d="M4.995 8.745a.75.75 0 0 1 1.06 0L7.25 9.939V4a.75.75 0 0 1 1.5 0v5.94l1.195-1.195a.75.75 0 1 1 1.06 1.06L8 12.811l-.528-.528a.945.945 0 0 1-.005-.005L4.995 9.805a.75.75 0 0 1 0-1.06z"
+                            fill="#b3b3b3">
+                        </path>
+                        <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13z"
+                            fill="#b3b3b3"></path>
+                    </svg>
+                    Install App</span>
+                <div class="account flex align_i gap">
+                    <button class="pointer sign">Sign Up</button>
+                    <button class="pointer login">Log In</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="cont flex gap">
+        <div class="left  left_grey_bg rounded">
+            <div class="library">
+                <div class="head flex align_i">
+                    <h3>Your Library</h3>
+                    <img src="img/plus.svg" alt="">
+                </div>
+                <div class="songlist">
+                    <ul>
+                    </ul>
+                </div>
+            </div>
+            <footer>
+                <div class="flex">
+                    <div><a class="f-color" href="https://www.spotify.com/in-en/legal/"><span>Legal</span></a></div>
+                    <div><a class="f-color" href="https://www.spotify.com/in-en/safetyandprivacy/"><span>Safety &amp;
+                                Privacy Center</span></a></div>
+                    <div><a class="f-color" href="https://www.spotify.com/in-en/legal/privacy-policy/"><span>Privacy
+                                Policy</span></a></div>
+                    <div><a class="f-color" href="https://www.spotify.com/in-en/legal/privacy-policy/#s3"><span>About
+                                Ads</span></a></div>
+                    <div><a class="f-color"
+                            href="https://www.spotify.com/in-en/accessibility/"><span>Accessibility</span></a></div>
+                </div>
+                <a class="f-color cookies" href="https://www.spotify.com/legal/cookies-policy/" target="_blank"
+                    rel="noopener"><span>Cookies</span></a>
+
+            </footer>
+        </div>
+        <div class="right right_grey_bg rounded">
+            <div class="spotifyPlaylists">
+                <h2>Spotify Playlists</h2>
+                <div class="cardcont flex wrap">
+                   
+                </div>
+                <div class="playbar rounded">
+                    <div class="flex align_i playbarcont">
+                        <div class="songinfo">
+
+                        </div>
+                        <div class="buttons flex just_c align_i gap">
+                            <img src="img/previous.svg" class="pointer" id="previous" alt="">
+                            <img src="img/play.svg" class="pointer" id="play" alt="">
+                            <img src="img/next.svg" class="pointer" id="next" alt="">
+                        </div>
+                        <div class="songtime">00:00 / 00:00</div>
+                        <div class="volumecont flex align_i just_c pointer gap">
+                            <img src="img/volume.svg" alt="">
+                            <div class="volume">
+                                <input type="range" min="0" max="100" value="50" class="volume-range pointer">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="seekbar rounded pointer">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
