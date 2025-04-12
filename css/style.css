@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: black;
+    color: white;
+    overflow-x: hidden;
+}
+
+nav {
+    padding: 10px 28px;
+}
+
+
+nav, .left svg {
+    fill: white;
+}
+
+nav {
+    justify-content: space-between;
+}
+.hamburger {
+    display: none;
+}
+
+.home {
+    background-color: #1f1f1f;
+    border-radius: 40px;
+    padding: 11px 6px 7px 13px;
+    margin-bottom: 4px;
+    margin-top: 1px;
+    cursor: pointer;
+    width: 27px;
+}
+
+input[type=text] {
+    width: 30vw;
+    padding: 0px 20px;
+    box-sizing: border-box;
+    border: none;
+    background-color: #1c1c1c;
+    color: white;
+    border-radius: 30px;
+}
+
+input::placeholder {
+    color: #b3b3b3;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+  
+}
+
+.home img {
+    width: 20px;
+}
+
+.install {
+    white-space: nowrap;
+    margin-right: 17px;
+}
+
+.install svg {
+    width: 1vw;
+    margin-right: 7px;
+    
+}
+
+.psd span{
+    font-weight: 700;
+}
+.psd span:hover{
+    color: white;
+}
+.gapp{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0px 13px;
+}
+
+.sign{
+    background-color: black;
+    color: #b3b3b3;
+    border: none;
+    font-size: 17px;
+    margin-right: 15px;
+}
+.sign:hover{
+    color: white;
+}
+.login{
+    border: none;
+    background-color: white;
+    padding: 15px 25px;
+    border-radius: 25px;
+    font-weight: 700;
+}
+
+.cont{
+    padding: 0 10px;
+    height: 88vh;
+}
+
+.left {
+    width: 30vw;
+    padding: 10px 20px;
+    min-height: 86%;
+    position: relative;
+}
+
+.right {
+    width: 70vw;
+    position: relative;
+    /* min-height: 40rem; */
+}
+
+.head {
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.head img {
+    width: 1vw;
+    cursor: pointer;
+}
+footer{
+    padding: 5px 1px;
+    position: absolute;
+    bottom: 20px;
+    min-width: 220px;
+}
+footer a{
+    font-size: 12px;
+    text-decoration: none;
+
+}
+footer div{
+    flex-wrap: wrap;
+}
+footer div div{
+    margin: 2px 30px 2px 1px;
+}
+footer .cookies{
+    color: white;
+    text-decoration: underline;
+}
+
+.spotifyPlaylists{
+    padding: 20px 40px;
+}
+.spotifyPlaylists .cardcont{
+    margin-top: 17px;
+    gap: 37px;
+    overflow-y: auto;
+    max-height: 65vh;
+}
+.spotifyPlaylists .card{
+    width: 175px;
+    padding: 10px;
+    position: relative;
+    /* border: 2px solid white; */
+}
+.spotifyPlaylists .card img{
+    width: 100%;
+    object-fit: contain;
+}
+.card h2{
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.card p{
+    font-size: 14px;
+}
+.card:hover{
+    background-color: #333333;
+}
+.card .play svg{
+    width: 25px;
+    padding: 10px;
+    border-radius: 40px;
+    background-color: #1ed760;
+    position: absolute;
+    bottom: 90px;
+    right: 25px;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+}
+.card:hover .play svg{
+    bottom: 110px;
+    opacity: 1;
+}
+
+.playbar{
+    position: absolute;
+    bottom: 0px;
+    width: 97%;
+    background-color: #333333;
+    padding: 15px;
+    left: 0;
+    height: 45px;
+}
+
+
+.songlist{
+    padding: 0 7px;
+    max-height: 60vh;
+    overflow-y: auto;
+}
+.songlist ul li{
+    padding: 10px;
+    border: 1px solid white;
+    margin: 20px 0;
+    /* gap: 50px; */
+    justify-content: space-between;
+}
+
+.seekbar{
+    height: 4px;
+    background: white;
+    position: relative;
+    top: 13px;
+}
+.seekbar .circle{
+    height: 15px;
+    width: 15px;
+    background-color: white;
+    border-radius: 20px;
+    position: relative;
+    bottom: 6px;
+    left: 0%;
+    transition: left 0.5s;
+}
+
+.playbarcont{
+    justify-content: space-between;
+    padding: 0 10px;
+}
